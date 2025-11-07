@@ -1,0 +1,12 @@
+<h1>Страница index</h1>
+{% extends 'mainpage/header_footer.html' %}>
+
+{% block content %}
+{% comment %}
+А такой - можно. Он комментирует даже другие директивы.
+{% endcomment %}
+
+<h1>Сегодня админ: {{admin_today}}</h1>
+<p> Здесь что то про наш сайт</p>
+
+{% endblock %}

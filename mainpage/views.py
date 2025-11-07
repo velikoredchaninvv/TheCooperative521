@@ -1,0 +1,12 @@
+from django.shortcuts import render
+
+# Create your views here.
+def index(request):
+    context = {
+        'admin_today' : 'Вася' # Позже эти данные можно взять из базы данных
+    }
+    return render( # Функция 'рендерит' шаблон, наполняет данными шаблон html страницы
+        request,                         # так всегда
+        'mainpage/index.html',            # Путь к шаблону после templates
+        context
+    )

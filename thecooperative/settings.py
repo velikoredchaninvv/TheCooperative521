@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mainpage',
+    'gantt_chart',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# файл setting читается в первую очередь, и внутри путь на urls
 ROOT_URLCONF = 'thecooperative.urls'
 
 TEMPLATES = [
