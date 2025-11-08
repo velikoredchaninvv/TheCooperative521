@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainpage',
     'gantt_chart',
+    'task',
 ]
 
 MIDDLEWARE = [
